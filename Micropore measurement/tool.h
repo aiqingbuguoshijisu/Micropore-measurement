@@ -12,8 +12,11 @@
 #include "nanoflann.hpp"
 #include <condition_variable>
 #include <atomic>  // For std::atomic_bool
+#include<queue>
 random_device rd;
 mt19937 gen(rd());
+
+int a;
 
 static Vector3d z_axis(0.0, 0.0, 1.0);
 
